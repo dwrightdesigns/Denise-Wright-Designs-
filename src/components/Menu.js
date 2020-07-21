@@ -18,6 +18,7 @@ const StyledMenu = styled.nav`
   .social {
     color: var(--dark-color);
     padding: 0 0 3rem 3rem;
+    display: block;
 
     p {
       padding-bottom: 0.5rem;
@@ -81,6 +82,11 @@ const StyledMenu = styled.nav`
       text-decoration: none;
       font-size: 1.2rem;
       text-transform: uppercase;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      font-family: "Spectral", serif;
 
       &:hover {
         color: var(--light-color);
@@ -172,22 +178,14 @@ const Menu = ({ open, closeMenu, history }) => {
         </div>
         <ul className="nav-links" open={open}>
           <li>
-            <a
-              className="links"
-              href="#"
-              onClick={(e) => changePage(e, "/design")}
-            >
+            <button className="links" onClick={(e) => changePage(e, "/design")}>
               Design
-            </a>
+            </button>
           </li>
           <li>
-            <a
-              className="links"
-              href="#"
-              onClick={(e) => changePage(e, "/code")}
-            >
+            <button className="links" onClick={(e) => changePage(e, "/code")}>
               Code
-            </a>
+            </button>
           </li>
           <li>
             <a className="links" href="https://wrightphotography.pixieset.com/">
@@ -195,22 +193,17 @@ const Menu = ({ open, closeMenu, history }) => {
             </a>
           </li>
           <li>
-            <a
-              className="links"
-              href="#"
-              onClick={(e) => changePage(e, "/about")}
-            >
+            <button className="links" onClick={(e) => changePage(e, "/about")}>
               About
-            </a>
+            </button>
           </li>
           <li>
-            <a
+            <button
               className="links"
-              href="#"
               onClick={(e) => changePage(e, "/contact")}
             >
               Contact
-            </a>
+            </button>
           </li>
         </ul>
         <Social />

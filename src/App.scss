@@ -134,6 +134,16 @@ body {
           margin-top: 4rem;
         }
 
+        .resume {
+          color: var(--light-color);
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            color: var(--dark-color);
+          }
+        }
+
         p {
           padding-bottom: 0.5rem;
         }
@@ -278,6 +288,7 @@ body {
 
   .social {
     color: var(--dark-color);
+    display: none;
     @media screen and (max-width: 1140px) {
       display: block;
       margin-top: 2rem;
@@ -299,6 +310,7 @@ body {
 
     ul {
       display: flex;
+      justify-content: left;
       @media screen and (max-width: 1140px) {
         justify-content: center;
       }

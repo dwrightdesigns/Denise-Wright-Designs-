@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
   constructor(props) {
