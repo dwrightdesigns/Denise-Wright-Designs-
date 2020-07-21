@@ -31,6 +31,7 @@ function Social(props) {
           </a>
         </li>
       </ul>
+      <a className="resume" href="https://drive.google.com/file/d/1znEGic0jGGfL1ZF6M565bWX0Oek9trsK/view?usp=sharing">View Resume</a>
     </div>
   );
 }

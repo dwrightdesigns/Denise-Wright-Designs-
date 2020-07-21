@@ -104,14 +104,14 @@ const StyledMenu = styled.nav`
     .logo_wrapper {
       width: 380px;
       @media screen and (max-width:1140px) {
-        width:250px;
+        width:200px;
       }
 
       .logo {
         width: 300px;
         padding: 0;
         @media screen and (max-width:1140px) {
-          width:200px;
+          width:175px;
         }
       }
     }

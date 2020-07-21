@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -13,12 +14,6 @@ class Portfolio extends Component {
     };
   }
   render() {
-    const settings = {
-      dots: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      swipeToSlide: true,
-    };
     return (
       <>
         <motion.div
@@ -33,17 +28,21 @@ class Portfolio extends Component {
             <h3>CODE</h3>
             <p className="skewed-box">CSS, HTML, JavaScript, React</p>
           </header>
-          <Slider {...settings}>
-            <div className="slider">
-              <div className="folio-image">
-                <img src="/img/portfolio/justdoit.jpg" alt="" />
-              </div>
+          <div className="cards-container">
+            <div className="card">
+              <img src="/img/portfolio/justdoit.jpg" alt="" />
               <div className="folio-info">
                 <h2>Just Do It!</h2>
                 <cite>June 14, 2020</cite>
-                <p>A responsive todo web application made with React, utilizing Styled Components, SASS and JavaScript.</p>
+                <p>
+                  A responsive todo web application made with React, utilizing
+                  Styled Components, SASS and JavaScript.
+                </p>
                 <div className="fp-btn">
-                  <a className="link" href="https://github.com/dwrightdesigns/todo-app">
+                  <a
+                    className="link"
+                    href="https://justdoitapp.netlify.app/"
+                  >
                     <svg>
                       <rect
                         x="0"
@@ -53,21 +52,25 @@ class Portfolio extends Component {
                         height="100%"
                       />
                     </svg>
-                    View on GitHub
+                    View Live
                   </a>
                 </div>
               </div>
             </div>
-            <div className="slider">
-              <div className="folio-image">
-                <img className="image" src="/img/portfolio/bloom.png" alt="" />
-              </div>
+            <div className="card">
+              <img className="image" src="/img/portfolio/bloom.png" alt="" />
               <div className="folio-info">
                 <h2>Bloom</h2>
                 <cite>June 17, 2020</cite>
-                <p>A responsive blog theme designed in Figma and built using HTML and SASS.</p>
+                <p>
+                  A responsive blog theme designed in Figma and built using HTML
+                  and SASS.
+                </p>
                 <div className="fp-btn">
-                  <a className="link" href="https://github.com/dwrightdesigns/bloom">
+                  <a
+                    className="link"
+                    href="https://github.com/dwrightdesigns/bloom"
+                  >
                     <svg>
                       <rect
                         x="0"
@@ -82,16 +85,20 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="slider">
-              <div className="folio-image">
-                <img src="/img/portfolio/form.png" alt="" />
-              </div>
+            <div className="card">
+              <img src="/img/portfolio/form.png" alt="" />
               <div className="folio-info">
                 <h2>Registration Form</h2>
                 <cite>February 2020</cite>
-                <p>A responsive form practice for school project made with HTML and vanilla CSS.</p>
+                <p>
+                  A responsive form practice for school project made with HTML
+                  and vanilla CSS.
+                </p>
                 <div className="fp-btn">
-                  <a className="link" href="https://github.com/dwrightdesigns/ux-form-assignment">
+                  <a
+                    className="link"
+                    href="https://github.com/dwrightdesigns/ux-form-assignment"
+                  >
                     <svg>
                       <rect
                         x="0"
@@ -106,7 +113,7 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
-          </Slider>
+          </div>
         </motion.div>
       </>
     );

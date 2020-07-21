@@ -8,18 +8,8 @@ import { Link } from "react-router-dom";
 class Portfolio extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      slideIndex: 0,
-      updateCount: 0,
-    };
   }
   render() {
-    const settings = {
-      dots: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      swipeToSlide: true,
-    };
     return (
       <>
         <motion.div
@@ -34,13 +24,11 @@ class Portfolio extends Component {
             <h3>DESIGN</h3>
             <p className="skewed-box">graphic design, user interface design</p>
           </header>
-          <Slider {...settings}>
-            <div className="slider">
-              <div className="folio-image">
-                <img src="/img/portfolio/mattwright-codes.png" alt="" />
-              </div>
+          <div className="cards-container">
+            <div className="card">
+              <img src="/img/portfolio/mattwright-codes.png" alt="" />
               <div className="folio-info">
-                <h2>Matt Wright</h2>
+                <h2>Matt Wright - Professional Portfolio</h2>
                 <cite>May 2020</cite>
                 <p>
                   Designed in Figma for my husbands Professional Portfolio
@@ -62,14 +50,12 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="slider">
-              <div className="folio-image">
-                <img src="/img/portfolio/mealpress.png" alt="" />
-              </div>
+            <div className="card">
+              <img src="/img/portfolio/mealpress.png" alt="" />
               <div className="folio-info">
                 <h2>MealPress</h2>
                 <cite>October 2019</cite>
-                <p>Foundation project at Kenzie Academy.</p>
+                <p>Low Fidelity UX Foundation project at Kenzie Academy.</p>
                 <div className="fp-btn">
                   <Link className="link" to="/casestudy">
                     <svg>
@@ -86,10 +72,8 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
-            <div className="slider">
-              <div className="folio-image">
-                <img src="/img/portfolio/tcog.png" alt="" />
-              </div>
+            <div className="card">
+              <img src="/img/portfolio/tcog.png" alt="" />
               <div className="folio-info">
                 <h2>Graphic Design - The Church of God</h2>
                 <cite>Since January 2017 - Present</cite>
@@ -113,7 +97,7 @@ class Portfolio extends Component {
                 </div>
               </div>
             </div>
-          </Slider>
+          </div>
         </motion.div>
       </>
     );

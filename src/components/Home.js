@@ -6,9 +6,17 @@ import { motion } from "framer-motion";
 function Home(props) {
   return (
     <>
-      <motion.div className="home" initial={props.initial} animate={props.animate} exit={props.exit} transition={props.transition} variants={props.variants}>
-        <p> 
-          Hello, I'm Denise, <br /> a UI Designer, Front-End Developer
+      <motion.div
+        className="home"
+        initial={props.initial}
+        animate={props.animate}
+        exit={props.exit}
+        transition={props.transition}
+        variants={props.variants}
+      >
+        <p>
+          <span>Hello, I'm Denise...</span> <br /> a UX Designer, Front-End
+          Developer
           <br /> and Photographer in Tulsa, Oklahoma
         </p>
 
