@@ -29,7 +29,11 @@ class Portfolio extends Component {
                   Website.
                 </p>
                 <div className="fp-btn">
-                  <a className="link" href="http://mattwright.codes/">
+                  <a
+                    target="_blank"
+                    className="link"
+                    href="http://mattwright.codes/"
+                  >
                     <svg>
                       <rect
                         x="0"
@@ -76,7 +80,11 @@ class Portfolio extends Component {
                   lower-thirds, animations and characters.
                 </p>
                 <div className="fp-btn">
-                  <a className="link" href="http://thechurchofgod.org">
+                  <a
+                    target="_blank"
+                    className="link"
+                    href="http://thechurchofgod.org"
+                  >
                     <svg>
                       <rect
                         x="0"

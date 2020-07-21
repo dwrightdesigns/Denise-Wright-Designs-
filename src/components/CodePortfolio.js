@@ -37,6 +37,7 @@ class Portfolio extends Component {
                 <div className="fp-btn">
                   <a
                     className="link"
+                    target="_blank"
                     href="https://justdoitapp.netlify.app/"
                   >
                     <svg>
@@ -65,6 +66,7 @@ class Portfolio extends Component {
                 <div className="fp-btn">
                   <a
                     className="link"
+                    target="_blank"
                     href="https://github.com/dwrightdesigns/bloom"
                   >
                     <svg>
@@ -93,6 +95,7 @@ class Portfolio extends Component {
                 <div className="fp-btn">
                   <a
                     className="link"
+                    target="_blank"
                     href="https://github.com/dwrightdesigns/ux-form-assignment"
                   >
                     <svg>
