@@ -36,6 +36,7 @@ class Portfolio extends Component {
                 </p>
                 <div className="fp-btn">
                   <a
+                    rel="noopener noreferrer"
                     className="link"
                     target="_blank"
                     href="https://justdoitapp.netlify.app/"
@@ -65,6 +66,7 @@ class Portfolio extends Component {
                 </p>
                 <div className="fp-btn">
                   <a
+                    rel="noopener noreferrer"
                     className="link"
                     target="_blank"
                     href="https://github.com/dwrightdesigns/bloom"
@@ -84,19 +86,30 @@ class Portfolio extends Component {
               </div>
             </div>
             <div className="card">
-              <img src="/img/portfolio/form.png" alt="" />
+              <img src="/img/portfolio/amid.png" alt="" />
               <div className="folio-info">
-                <h2>Registration Form</h2>
-                <cite>February 2020</cite>
+                <h2>Amid</h2>
+                <cite>July 2020</cite>
                 <p>
-                  A responsive form practice for school project made with HTML
-                  and vanilla CSS.
+                  Amid was a group project at Kenzie Academy. I am responsible
+                  for:
+                  <ul>
+                    <li> The Design </li>
+                    <li>
+                      Setting up the project file and managaing the repository.
+                    </li>
+                    <li>
+                      Coding the timers and syncing animated buttons to timer.
+                    </li>
+                    <li> Coding the settings menu and landing page. </li>
+                  </ul>
                 </p>
                 <div className="fp-btn">
                   <a
+                    rel="noopener noreferrer"
                     className="link"
                     target="_blank"
-                    href="https://github.com/dwrightdesigns/ux-form-assignment"
+                    href="https://amidapp.netlify.app/"
                   >
                     <svg>
                       <rect
@@ -107,7 +120,7 @@ class Portfolio extends Component {
                         height="100%"
                       />
                     </svg>
-                    View on GitHub
+                    View Live
                   </a>
                 </div>
               </div>

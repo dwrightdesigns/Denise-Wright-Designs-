@@ -188,7 +188,7 @@ const Menu = ({ open, closeMenu, history }) => {
             </button>
           </li>
           <li>
-            <a className="links" target="_blank" href="https://wrightphotography.pixieset.com/">
+            <a rel="noopener noreferrer" className="links" target="_blank" href="https://wrightphotography.pixieset.com/">
               Photography
             </a>
           </li>

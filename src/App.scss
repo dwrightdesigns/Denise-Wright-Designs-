@@ -181,7 +181,7 @@ body {
       display: flex;
       flex-direction: column;
       margin: auto;
-      height: 90vh;
+      height: 100vh;
       width: 100%;
       // overflow: hidden;
 
@@ -203,10 +203,19 @@ body {
             align-items: unset;
           }
 
+          .btn-container {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 1024px) {
+              flex-direction: column;
+            }
+          }
+
           img {
             width: 100%;
             max-width: 600px;
             object-fit: cover;
+            object-position: left;
             margin: 0 0 1rem 0;
             @media screen and (min-width: 768px) {
               width: 50%;
@@ -243,6 +252,7 @@ body {
               background: transparent;
               cursor: pointer;
               outline: none;
+              margin: 1rem 0 0 0;
 
               .link {
                 text-decoration: none;

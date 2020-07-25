@@ -30,6 +30,7 @@ class Portfolio extends Component {
                 </p>
                 <div className="fp-btn">
                   <a
+                    rel="noopener noreferrer"
                     target="_blank"
                     className="link"
                     href="http://mattwright.codes/"
@@ -81,6 +82,7 @@ class Portfolio extends Component {
                 </p>
                 <div className="fp-btn">
                   <a
+                    rel="noopener noreferrer"
                     target="_blank"
                     className="link"
                     href="http://thechurchofgod.org"
